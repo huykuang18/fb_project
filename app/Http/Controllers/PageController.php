@@ -31,4 +31,9 @@ class PageController extends Controller
 		}
 	}
 
+    public function logout()
+    {
+        session()->forget('user');
+        return redirect('/');
+    }
 }

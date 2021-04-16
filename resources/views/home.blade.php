@@ -16,6 +16,11 @@
             @if (session("user"))
                 <h2>Xin chào {{session("user")}} !</h2>
                 <hr>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <a href="{{asset('logout')}}" class="btn btn-md btn-danger">Đăng xuất </a>
+                    </div>
+                </div>
             @else
                 <h2>Xin chào!</h2>
                 <hr>
