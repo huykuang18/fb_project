@@ -13,6 +13,10 @@
 <div class="container-fluid">
         <div class="row-fluid">
             <div class="col-md-offset-4 col-md-4" id="box">
+            @if (session("user"))
+                <h2>Xin chào {{session("user")}} !</h2>
+                <hr>
+            @else
                 <h2>Xin chào!</h2>
                 <hr>
                 <div class="form-group">
@@ -20,6 +24,7 @@
                         <a href="{{asset('login')}}" class="btn btn-md btn-info">Đăng nhập ngay </a>
                     </div>
                 </div>
+            @endif
             </div>
         </div>
     </div>

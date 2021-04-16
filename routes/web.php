@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','App\Http\Controllers\PageController@getIndex');
+
+Route::get('login','App\Http\Controllers\PageController@getLogin');
+Route::post('login','App\Http\Controllers\PageController@postLogin');
